@@ -8,14 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="author" content="SoonLaunch">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- ========================= CSS here ========================= -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        	<link rel="stylesheet" href="assets/css/lineicons.css">
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        	<link rel="stylesheet" href="css/lineicons.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -29,13 +29,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <a href="#" class="logo"> <img src="assets/img/logo.svg" alt=""> </a>
+							<div class="logo" data-v-component-site>
+
+								<a href="index.html" href="index.html" data-v-url-params='{"host":"www.*.*"}'>   
+									<!-- <span data-v-site-title>Vvveb Blog</span> -->	
+									<img src="img/logo.svg" class="logo-default" data-v-site-logo>
+									<!--
+										   <img src="img/logo.png" class="logo-sticky" data-v-site-logo-sticky>
+										   <img src="img/logo-white.png" class="logo-default-dark" data-v-site-logo-dark>
+										   <img src="img/logo-white.png" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+									-->                    
+								</a>
+							</div>                            
                         </div>
                         <div class="col-md-8">
                             <!-- social-links start  -->
                             <div class="social-links">
                                 <ul>
-                                    <li><a href="https://github.com/uideck/"><i class="lni lni-github-original"></i></a></li>
+                                    <li><a href="https://github.com/Vvveb"><i class="lni lni-github-original"></i></a></li>
                                     <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
                                     <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-filled"></i></a></li>
                                     <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
@@ -58,34 +69,101 @@
                                 <div class="content-wrapper">
                                     <h1 class="wow fadeInLeft" data-wow-delay=".2s">Coming Soon</h1>
                                     <p class="wow fadeInRight" data-wow-delay=".4s">We are still working on our product, subscribe to our newsletter to get notified when we launch and make the site live!</p>
-                                    <!-- sunscribe-form start  -->
-                                    <form
-                                        action="https://mailchimp.com/subscribe/post?u=4dbefd9d3a1d6a570020b1e85&amp;id=e16d098ae8"
-                                        method="post" id="subscribe-form" name="subscribe-form"
-                                        class="subscribe-form subscribe-form-2 validate wow fadeInUp"
-                                        data-wow-delay=".5s" target="_blank" novalidate>
-                                        <input type="email" placeholder="Enter your email address " name="EMAIL"
-                                            id="mce-EMAIL" class="required email">
 
-                                        <div id="mce-responses" class="clear">
-                                            <div class="response" id="mce-error-response" style="display:none"></div>
-                                            <div class="response" id="mce-success-response" style="display:none"></div>
-                                        </div>
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                            type="text" name="b_4dbefd9d3a1d6a570020b1e85_e16d098ae8" tabindex="-1"
-                                            value=""></div>
-                                        
-                                        <button id="subscribe" class="sub_btn common-btn">Notify Me</button>
-                                    </form>
-                                    <!-- subscribe-form end  -->
+									<div class="" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-page">
+
+										<div class="notifications" data-v-notifications>
+
+										  <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+
+											<div class="icon align-middle me-2">
+											  <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+											</div>
+
+											<div class="flex-grow-1 align-self-center text-small">
+											  <div>
+												<div data-v-notification-text>
+												  This is a placeholder for a notification message.
+												</div>
+											  </div>
+											</div>
+
+
+											<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+											  <span aria-hidden="true">
+												<!-- <i class="la la-times"></i> -->
+											  </span>
+											</button>
+										  </div>
+
+										  <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
+
+											<div class="icon align-middle me-2">
+											  <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+											</div>
+
+											<div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+											  This is a placeholder for a success message.
+											</div>
+
+											<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+											  <span aria-hidden="true">
+												<!-- <i class="la la-times"></i> -->
+											  </span>
+											</button>
+										  </div>
+
+										  <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+											<div class="icon align-middle me-2">
+											  <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+											</div>
+
+											<div class="flex-grow-1 align-self-center" data-v-notification-text>
+											  This is a placeholder for a info message.
+											</div>
+
+											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+											  <span aria-hidden="true">
+												<!-- <i class="la la-times"></i> -->
+											  </span>
+											</button>
+										  </div>
+
+										</div>	
+
+										<!-- sunscribe-form start  -->
+										<form
+											action=""
+											method="post" id="subscribe-form" name="subscribe-form"
+											class="subscribe-form subscribe-form-2 validate wow fadeInUp"
+											data-wow-delay=".5s">
+											
+											<input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+											
+											<input type="email" placeholder="Enter your email address " name="email" class="required email" required>
+
+										  <!-- if these hidden inputs are filled then ignore, robots -->
+
+										  <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form">
+
+										  <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+										  <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+											
+											
+											<button id="subscribe" class="sub_btn common-btn">Notify Me</button>
+										</form>
+										<!-- subscribe-form end  -->
+									</div>
                                 </div>
                                 <!-- content-wrapper end  -->
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <!-- img-wrapper start  -->
                                 <div class="img-wrapper wow fadeInLeft" data-wow-delay=".5s">
-                                    <img src="assets/img/img-1.jpg" alt="">
+                                    <img src="img/img-1.jpg" alt="">
                                 </div>
                                 <!-- img-wrapper end  -->
                             </div>
@@ -98,7 +176,7 @@
                             <div class="col-xl-6 col-lg-5">
                                 <!-- service-img start  -->
                                 <div class="service-img wow fadeInRight" data-wow-delay=".4s">
-                                    <img src="assets/img/img-2.jpg" alt="">
+                                    <img src="img/img-2.jpg" alt="">
                                 </div>
                                 <!-- service-img end  -->
                             </div>
@@ -108,11 +186,11 @@
                                     <h3>Products and Services</h3>
                                     <div class="service-list">
                                         <ul>
-                                            <li><a href="https://uideck.com/" rel="nofollow noopner" target="_blank">- UIdeck</a></li>
-                                            <li><a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">- Lineicons</a></li>
-                                            <li><a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">- Ayro UI</a></li>
-                                            <li><a href="https://tailgrids.com/" rel="nofollow noopner" target="_blank">- TailGrids</a></li>
-                                            <li><a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">- GrayGrids</a></li>
+                                            <li><a href="#">- Product Strategy</a></li>
+                                            <li><a href="#">- Product Development</a></li>
+                                            <li><a href="#">- Digital Marketing</a></li>
+                                            <li><a href="#">- Product Consultancy</a></li>
+                                            <li><a href="#">- Hosting Services</a></li>
                                         </ul>
                                         <ul>
                                             <li><a href="#">- Product Strategy</a></li>
@@ -126,7 +204,7 @@
                                 <!-- service-list-wrapper end  -->
                                 <!-- copyright start  -->
                                 <div class="copyright wow fadeInUp" data-wow-delay=".2s">
-                                    <p class="text-center text-lg-right">Crafted By <a href="https://uideck.com" rel="nofollow noopener" target="_blank">UIdeck</a> | Star This <a href="https://github.com/uideck/blink-html-coming-soon-page" rel="nofollow noopener" target="_blank">GitHub Repo</a></p>
+                                    <p class="text-center text-lg-right">Crafted By <a href="https://uideck.com" rel="nofollow noopener" target="_blank">UIdeck</a> | Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a></p>
                                 </div>
                                 <!-- copyright end  -->
                             </div>
@@ -140,7 +218,7 @@
         <!-- ========================= main end ========================= -->
         
 		<!-- ========================= JS here ========================= -->
-        <script src="assets/js/wow.min.js"></script>
+        <script src="js/wow.min.js"></script>
         <script>
             	// WOW active
 	            new WOW().init();
